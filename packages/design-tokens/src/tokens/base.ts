@@ -1,0 +1,51 @@
+// packages/design-tokens/src/tokens/base.ts
+import type { DesignTokens } from '../types';
+
+export const baseTokens: DesignTokens = {
+  colors: {
+    primary: '#2563eb',
+    primaryHover: '#1d4ed8',
+    primaryForeground: '#ffffff',
+    secondary: '#64748b',
+    secondaryHover: '#475569',
+    secondaryForeground: '#ffffff',
+    background: '#ffffff',
+    foreground: '#0f172a',
+    muted: '#f1f5f9',
+    mutedForeground: '#64748b',
+    border: '#e2e8f0',
+    ring: '#2563eb',
+    destructive: '#ef4444',
+    destructiveForeground: '#ffffff',
+    success: '#22c55e',
+    successForeground: '#ffffff',
+    warning: '#f59e0b',
+    warningForeground: '#ffffff',
+  },
+  typography: {
+    fontFamily: "'Inter', sans-serif",
+    fontFamilyMono: "'JetBrains Mono', monospace",
+    fontSizeBase: '1rem',
+    fontWeightNormal: '400',
+    fontWeightMedium: '500',
+    fontWeightBold: '700',
+    lineHeightBase: '1.5',
+    letterSpacingTight: '-0.025em',
+    letterSpacingNormal: '0em',
+    letterSpacingWide: '0.025em',
+    letterSpacingWider: '0.05em',
+    letterSpacingWidest: '0.1em',
+  },
+  spacing: {
+    unit: '0.25rem',
+    borderRadius: '0.5rem',
+    borderRadiusSm: '0.25rem',
+    borderRadiusLg: '0.75rem',
+    borderRadiusFull: '9999px',
+  },
+  shadows: {
+    sm: '0 1px 2px 0 rgb(0 0 0 / 0.05)',
+    md: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
+    lg: '0 10px 15px -3px rgb(0 0 0 / 0.1)',
+  },
+};

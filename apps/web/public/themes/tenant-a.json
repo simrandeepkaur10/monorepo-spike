@@ -1,0 +1,48 @@
+{
+  "colors": {
+    "primary": "#7c3aed",
+    "primaryHover": "#6d28d9",
+    "primaryForeground": "#ffffff",
+    "secondary": "#a855f7",
+    "secondaryHover": "#9333ea",
+    "secondaryForeground": "#ffffff",
+    "background": "#faf5ff",
+    "foreground": "#1e1b4b",
+    "muted": "#ede9fe",
+    "mutedForeground": "#6d28d9",
+    "border": "#ddd6fe",
+    "ring": "#7c3aed",
+    "destructive": "#ef4444",
+    "destructiveForeground": "#ffffff",
+    "success": "#22c55e",
+    "successForeground": "#ffffff",
+    "warning": "#f59e0b",
+    "warningForeground": "#ffffff"
+  },
+  "typography": {
+    "fontFamily": "'Poppins', sans-serif",
+    "fontFamilyMono": "'Fira Code', monospace",
+    "fontSizeBase": "1rem",
+    "fontWeightNormal": "400",
+    "fontWeightMedium": "500",
+    "fontWeightBold": "700",
+    "lineHeightBase": "1.6",
+    "letterSpacingTight": "-0.02em",
+    "letterSpacingNormal": "0.01em",
+    "letterSpacingWide": "0.05em",
+    "letterSpacingWider": "0.08em",
+    "letterSpacingWidest": "0.15em"
+  },
+  "spacing": {
+    "unit": "0.25rem",
+    "borderRadius": "1rem",
+    "borderRadiusSm": "0.5rem",
+    "borderRadiusLg": "1.5rem",
+    "borderRadiusFull": "9999px"
+  },
+  "shadows": {
+    "sm": "0 1px 3px 0 rgb(124 58 237 / 0.1)",
+    "md": "0 4px 12px -1px rgb(124 58 237 / 0.15)",
+    "lg": "0 10px 30px -3px rgb(124 58 237 / 0.2)"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "my-monorepo",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "preview": "pnpm --filter web preview",
+    "test": "pnpm -r test",
+    "test:ui": "pnpm --filter @repo/ui test",
+    "test:web": "pnpm --filter web test",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "clean": "pnpm -r exec rm -rf node_modules dist coverage"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
