@@ -1,6 +1,6 @@
 // apps/web/src/components/HomePage.tsx
 import { Button, Input, Modal } from '@repo/ui';
-import { useState } from 'react';
+import { useState, type ChangeEvent } from 'react';
 import { useThemeStore } from '../hooks/useThemeStore';
 
 export function HomePage() {
@@ -117,7 +117,9 @@ export function HomePage() {
                 label="Validated Input"
                 placeholder="Required field..."
                 value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
+                onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                  setInputValue(e.target.value)
+                }
                 error={inputError}
               />
               <Input

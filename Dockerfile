@@ -73,8 +73,12 @@ FROM tester AS builder
 ARG VITE_DEFAULT_TENANT=tenant-a
 ENV VITE_DEFAULT_TENANT=$VITE_DEFAULT_TENANT
 
-# Build web app → outputs to apps/web/dist
-RUN echo "▶ Building web app..." && \
+# Build workspace libs first (web tsc references their declarations)
+RUN echo "▶ Building @repo/design-tokens..." && \
+    pnpm --filter @repo/design-tokens build && \
+    echo "▶ Building @repo/ui..." && \
+    pnpm --filter @repo/ui build && \
+    echo "▶ Building web app..." && \
     pnpm --filter web build && \
     echo "✅ Build complete"
 
